@@ -29,7 +29,7 @@
     color: #EEEE
     font-size: 100px
     @media (max-width: 585px)
-      font-size: 75px
+      font-size: 65px
   h2, h3, h4
     font-family: 'Comfortaa', cursive
     color: #EEEE
