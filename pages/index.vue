@@ -13,6 +13,8 @@
     background: #000000
   section
     margin: 0 100px
+    @media (max-width: 585px)
+      margin: 0 50px
 
   a
     text-decoration: none
@@ -26,6 +28,8 @@
     font-family: 'Bebas Neue', cursive
     color: #EEEE
     font-size: 100px
+    @media (max-width: 585px)
+      font-size: 75px
   h2, h3, h4
     font-family: 'Comfortaa', cursive
     color: #EEEE
