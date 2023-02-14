@@ -34,6 +34,8 @@
 <style lang="sass" scoped>
   form
     margin: 0 75px
+    @media (max-width: 585px)
+      margin: 0
   label
     margin-right: 15px
     font-family: 'Arimo', sans-serif

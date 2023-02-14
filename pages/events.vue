@@ -113,7 +113,7 @@ export default {
             {
               title: 'jonahK',
               name: 'Jonah K',
-              body: 'Jonah K is a sonic artist and producer specializing in deep, bass-driven dance music. Complex rhythms, textured bass, and haunting atmospherics feature prominently in her work, which can be heard anywhere from dance floors to film scores. Jonah’s releases can be found on multiple international labels and, locally, she is a well-established contributor to Canada’s electronic music community. When not producing music, Jonah performs frequently, organizes raves, ran a monthly radio show on <NuxtLink to="https://dubplate.fm/">dubplate.fm</NuxtLink>, and is a resident artist with the Suma, Dark Rooms and Bass Witch collectives.',
+              body: 'Jonah K is a sonic artist and producer specializing in deep, bass-driven dance music. Complex rhythms, textured bass, and haunting atmospherics feature prominently in her work, which can be heard anywhere from dance floors to film scores. Jonah’s releases can be found on multiple international labels and, locally, she is a well-established contributor to Canada’s electronic music community. When not producing music, Jonah performs frequently, organizes raves, ran a monthly radio show on dubplate.fm, and is a resident artist with the Suma, Dark Rooms and Bass Witch collectives.',
               img: "jonahK.jpeg",
               location: 'Toronto',
               genre: 'deep, bass driven dance music',
@@ -137,9 +137,14 @@ export default {
     width: 50%
   .dj-container
     display: flex
+    @media (max-width: 585px)
+      flex-direction: column
   .dj-card
     width: 50%
     margin-left: 120px
+    @media (max-width: 585px)
+      margin-left: 20px
+      width: 100%
 
 
 </style>
