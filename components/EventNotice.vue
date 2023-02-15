@@ -1,36 +1,17 @@
 <template>
     <div class="event-container">
-        <h2>EVENT NOTICE</h2>
+        <NuxtLink to="https://www.eventbrite.ca/e/playground-tickets-547878829327" class="title">GET TICKETS</NuxtLink>
         <h4>playground 1.1</h4>
-      <ul>
-            <li>
-                <p>
-                    DATE: APRIL 28, 2023
-                </p>
-            </li>
-          <li>
-              <p>
-                  LOCATION: Wiggle Room Toronto
-              </p>
-              <p>
-                  772 Dundas St W, Toronto, ON M6J 1V1
-              </p>
-          </li>
-            <li>
-                <p>
-                    18+ FETISH DRESS CODE IN EFFECT
-                </p>
-            </li>
-            <li>
-                <p>
-                    See <NuxtLink to="/events">EVENTS</NuxtLink> page for more.
-                </p>
-            </li>
-        </ul>
+        <p>
+            More info, see <NuxtLink to="/events">EVENTS</NuxtLink>
+    </p>
     </div>
 </template>
 
 <style lang="sass" scoped>
+    .title
+        font-size: 25px
+        margin-top: 15px
     .event-container
         border: 1px solid #EEEE
         display: flex

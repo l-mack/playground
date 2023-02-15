@@ -3,6 +3,7 @@
     <section>
       <h1>EVENTS</h1>
       <h3>playground 1.1</h3>
+      <NuxtLink to="https://www.eventbrite.ca/e/playground-tickets-547878829327" class="title">GET TICKETS</NuxtLink>
       <ul>
             <li>
                 <p>
@@ -131,6 +132,9 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+  .title
+    font-size: 25px
+    margin-top: 15px
   .dj-img
     width: 400px
   img
