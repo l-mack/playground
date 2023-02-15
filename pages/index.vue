@@ -1,8 +1,12 @@
+
+import EventNotice from '~~/components/EventNotice.vue';
+
 <template>
     <Nav />
     <section>
       <h1>PLAYGROUND</h1>
     <h3>A CONSENT CONSCIOUS KINK PARTY</h3>
+    <EventNotice />
     <Intro />
     <Pages />
     </section>
