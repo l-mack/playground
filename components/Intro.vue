@@ -5,3 +5,7 @@
     </p>
     
 </template>
+
+<style lang="sass" scoped>
+
+</style>

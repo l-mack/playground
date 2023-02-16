@@ -38,8 +38,8 @@
             border-radius: 10px
             text-align: center
             transition: 0.3s
-            background: #434343
-            opacity: .95
+            background: #000000
+            opacity: .87
         
     .nav-menu.active
         @media only screen and (max-width: 768px)
@@ -47,10 +47,18 @@
         
     .nav-item
         @media only screen and (max-width: 768px)
-            margin: 2.5rem 0
+            padding: 2.5rem 0
+    .nav-item:hover a, .nav-item:active a
+        @media only screen and (max-width: 768px)
+            background: #e02142
+            color: #000000
+    .nav-item:hover, .nav-item:active
+         @media only screen and (max-width: 768px)
+            background: #e02142
     a
         @media only screen and (max-width: 768px)
             border-bottom: none
+
     .hamburger
         display: none
         @media only screen and (max-width: 768px)

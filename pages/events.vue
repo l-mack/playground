@@ -1,9 +1,17 @@
 <template>
     <Nav />
     <section>
-      <h1>EVENTS</h1>
-      <h3>playground 1.1</h3>
-      <NuxtLink to="https://www.eventbrite.ca/e/playground-tickets-547878829327" class="title">GET TICKETS</NuxtLink>
+      <div class="events-header">
+        <h1>EVENTS</h1>
+        <h3>playground 1.1</h3>
+        <NuxtLink to="https://www.eventbrite.ca/e/playground-tickets-547878829327" class="title">GET TICKETS</NuxtLink>
+      </div>
+
+      <div class="events-container">
+        <!-- <div class="event-img"> -->
+        <img src="../assets/1.1 Playground.png" />
+      <!-- </div> -->
+      
       <ul>
             <li>
                 <p>
@@ -24,53 +32,57 @@
                 </p>
             </li>
         </ul>
-      <h4>MUSIC LINEUP:</h4>
-      <div class="dj-container">
-        
-        <div class="dj-img">
-          <img src="../static/jonahK.jpeg" />
-        </div>
-        <div class="dj-text-box">
-          <p>{{ djList[1].name }}</p>
-          <button @click="setActive(1)">See More</button>
-        </div>
-        
-        <div v-if="active === 1" class="dj-card">
-          <div class="dj-header">
-            <h3>{{ djList[1].name }}</h3>
-          </div>
-          <ul>
-            <li>
-              <p>LOCATION: {{ djList[1].location }}</p>
-            </li>
-            <li>
-              <p>GENRE: {{ djList[1].genre }}</p>
-            </li>
-            <li>
-              <NuxtLink :to="`${djList[1].site}`">WEBSITE LINK</NuxtLink>
-            </li>
-            <li>
-              <div class="dj-body">
-              <p>{{ djList[1].body }}</p>
-          </div>
-            </li>
-          </ul>
-        </div>
+
       </div>
 
-      <div class="dj-container">
-        <div class="dj-img">
-          <img src="../static/acidBurn.jpeg" />
-        </div>
+      <div class="dj-flex">
+        <h4>MUSIC LINEUP:</h4>
+      
+        <div class="dj-container">
         <div class="dj-text-box">
-          <p>{{ djList[0].name }}</p>
-          <button @click="setActive(0)">see more</button>
+          <p class="dj-label">{{ djList[1].name }}</p>
+          <button @click="jonah = !jonah">SEE MORE</button>
         </div>
         
-        <div v-if="active === 0" class="dj-card">
-          <div class="dj-header">
-            <h3>{{ djList[0].name }}</h3>
+        <div v-if="jonah" class="dj-card">
+          <h3 class="dj-title">{{ djList[1].name }}</h3>
+
+          <div class="dj-body">
+            <img class="dj-img" src="../static/jonahK.jpeg" />
+            
+            <ul>
+              <li>
+                <p>LOCATION: {{ djList[1].location }}</p>
+              </li>
+              <li>
+                <p>GENRE: {{ djList[1].genre }}</p>
+              </li>
+              <li>
+                <NuxtLink :to="`${djList[1].site}`">WEBSITE LINK</NuxtLink>
+              </li>
+              <li>
+                <div class="dj-body">
+                  <p>{{ djList[1].body }}</p>
+                </div>
+              </li>
+            </ul>
           </div>
+
+        </div>
+        </div>
+
+        <div class="dj-container">
+        <div class="dj-text-box">
+          <p class="dj-label">{{ djList[0].name }}</p>
+          <button @click="madison = !madison">SEE MORE</button>
+        </div>
+        
+        <div v-if="madison" class="dj-card">
+          <h3 class="dj-title">{{ djList[0].name }}</h3>
+          
+          <div class="dj-body">
+            <img class="dj-img" src="../static/acidBurn.jpeg" />
+
           <ul>
             <li>
               <p>LOCATION: {{ djList[0].location }}</p>
@@ -83,12 +95,17 @@
             </li>
             <li>
               <div class="dj-body">
-              <p>BIO: {{ djList[0].body }}</p>
-          </div>
+                <p>BIO: {{ djList[0].body }}</p>
+              </div>
             </li>
           </ul>
         </div>
+        </div>
+        </div>
+
       </div>
+      
+
     </section>
 </template>
 
@@ -96,6 +113,9 @@
 export default {
   data () {
         return {
+          jonah: null,
+          madison: null,
+
           active: null,
           isModalVisible: false,
           showModal: false,
@@ -132,23 +152,73 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+  .events-header
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  .events-container
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 50px 0
+    @media (max-width: 650px)
+      flex-direction: column
+
+  .event-img
+    width: 75%
+  ul li p
+    margin: 50px 0
   .title
     font-size: 25px
     margin-top: 15px
+  .dj-flex
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
   .dj-img
-    width: 400px
+    width: 25%
+  .dj-title
+    font-size: 25px
+    margin: 50px 0
   img
     width: 50%
   .dj-container
     display: flex
+    flex-direction: column
     @media (max-width: 585px)
-      flex-direction: column
+
+  .dj-label
+    margin-right: 50px
+      
   .dj-card
-    width: 50%
-    margin-left: 120px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
     @media (max-width: 585px)
       margin-left: 20px
       width: 100%
+  .dj-text-box
+    display: flex
+    justify-content: center
+    align-items: center
+
+  .dj-body
+    display: flex
+    justify-content: center
+    align-items: center
+    @media (max-width: 835px)
+      flex-direction: column
+  .dj-img
+    @media (max-width: 835px)
+      width: 50%
+
+  img 
+    @media (max-width: 650px)
+      width: 75%
 
 
 </style>

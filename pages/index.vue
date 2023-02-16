@@ -4,10 +4,13 @@ import EventNotice from '~~/components/EventNotice.vue';
 <template>
     <Nav />
     <section>
-      <h1>PLAYGROUND</h1>
-    <h3>A CONSENT CONSCIOUS KINK PARTY</h3>
-    <EventNotice />
-    <Intro />
+      <header>
+        <h1>PLAYGROUND</h1>
+        <h3>A CONSENT CONSCIOUS KINK PARTY</h3>
+        <EventNotice />
+        <Intro />
+      </header>
+      
     <Pages />
     </section>
   </template>
@@ -19,7 +22,11 @@ import EventNotice from '~~/components/EventNotice.vue';
     margin: 0 100px
     @media (max-width: 585px)
       margin: 0 50px
-
+  header
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
   a
     text-decoration: none
     color: #e02142
