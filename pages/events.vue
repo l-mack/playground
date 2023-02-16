@@ -9,7 +9,7 @@
 
       <div class="events-container">
         <!-- <div class="event-img"> -->
-        <img src="../static/1.1 Playground.png" />
+        <img src="../static/Playground.png" />
       <!-- </div> -->
       
       <ul>
