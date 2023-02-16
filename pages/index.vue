@@ -11,8 +11,9 @@ import EventNotice from '~~/components/EventNotice.vue';
         <Intro />
       </header>
       
-    <Pages />
+      <Pages />
     </section>
+    <Footer />
   </template>
 
 <style lang="sass">
