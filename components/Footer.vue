@@ -19,7 +19,7 @@
 
             <div class="social">
                 <NuxtLink to="https://www.instagram.com/playground_kink/">INSTAGRAM</NuxtLink>
-                <NuxtLink to="/conact">CONTACT PAGE</NuxtLink>
+                <NuxtLink to="/contact">CONTACT PAGE</NuxtLink>
             </div>
 
         </div>
