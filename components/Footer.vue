@@ -79,14 +79,15 @@
         @media (max-width: 750px)
             margin-right: 0
     .footer-textbox
+        padding: 10px
         @media (max-width: 450px)
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
+            padding: 0
     .footer-textbox a
-        @media (max-width: 450px)
-            padding: 5px
+        padding: 5px
     .textbox-top
         margin-bottom: 25px
         @media (max-width: 450px)
