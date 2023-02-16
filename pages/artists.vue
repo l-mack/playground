@@ -1,5 +1,6 @@
 <template>
   <Nav />
+  <section>
     <h1>call for artists</h1>
     <p>
       PLAYGROUND is always seeking talented individuals to partner with our events!
@@ -24,4 +25,9 @@
     <p>
       PLAYGROUND actively is seeking bipoc, trans, queer folks, especially models and DJs to work with us.  Preference is given so please reach out!
     </p>
+  </section>
+    
+    <Footer />
   </template>
+
+  

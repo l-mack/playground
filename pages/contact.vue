@@ -29,6 +29,7 @@
     </form>
 
   </section>
+  <Footer />
 </template>
 
 <style lang="sass" scoped>

@@ -5,7 +5,7 @@
                 <div class="footer-textbox textbox-top">
                     <NuxtLink to="/">HOME</NuxtLink>
                     <NuxtLink to="/events">EVENTS</NuxtLink>
-                    <NuxtLink to="/protocol">CALL FOR ARTISTS</NuxtLink>
+                    <NuxtLink to="/artists">CALL FOR ARTISTS</NuxtLink>
                 </div>
             
                 <div class="footer-textbox">

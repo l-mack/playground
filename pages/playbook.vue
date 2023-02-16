@@ -22,4 +22,6 @@
     </p>
 
   </section>
+  <Footer />
   </template>
+
