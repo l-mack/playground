@@ -49,6 +49,8 @@ import EventNotice from '~~/components/EventNotice.vue';
   h2, h3, h4
     font-family: 'Comfortaa', cursive
     color: #EEEE
+  h3
+    text-align: center
   p
     font-family: 'Arimo', sans-serif
     color: #EEEE
