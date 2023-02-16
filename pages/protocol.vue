@@ -36,7 +36,6 @@
           We are a place that does not shame people for sexual or kink tastes nor do we condone individuals pushing their personal ideology unto other dynamics unless stated and agreed upon.  We have developed a comprehensive <NuxtLink to="/playbook">PLAYBOOK</NuxtLink> that lays it all out.  This is required reading for anyone who wants to play!
         </p>
       </div>
-
     </div>
 
     
@@ -60,33 +59,36 @@
 
     
 
-    <div class="container"></div>
-
-    <button @click="showConsent = !showConsent">CONSENT CONSCIOUSNESS</button>
-    <div v-if="showConsent">
-      <p>
-        We have a full <NuxtLink to="/playbook">PLAYBOOK</NuxtLink> that lays out our rules but the FIRST RULE that governs our party is consent.  An entire section of the playbook is dedicated to making very clear what consent means and how it’s a cornerstone of play and interaction at PLAYGROUND.  
-      </p>
-      <p>
-        The Playbook is our rules for attendance at our party and there is an expectation that everyone absorbs them.  
-      </p>
-      <p>
-        Once again, PLAYGROUND reserves the right to remove anyone from the event who exhibits behaviour that is not inline with our values or the protocol of our event. 
-      </p>
+    <div class="container">
+      <button @click="showConsent = !showConsent">CONSENT CONSCIOUSNESS</button>
+      <div v-if="showConsent">
+        <p>
+          We have a full <NuxtLink to="/playbook">PLAYBOOK</NuxtLink> that lays out our rules but the FIRST RULE that governs our party is consent.  An entire section of the playbook is dedicated to making very clear what consent means and how it’s a cornerstone of play and interaction at PLAYGROUND.  
+        </p>
+        <p>
+          The Playbook is our rules for attendance at our party and there is an expectation that everyone absorbs them.  
+        </p>
+        <p>
+          Once again, PLAYGROUND reserves the right to remove anyone from the event who exhibits behaviour that is not inline with our values or the protocol of our event. 
+        </p>
+      </div>
     </div>
 
-    <div class="container"></div>
 
-    <button @click="showHarm = !showHarm">HARM REDUCTION</button>
-    <div v-if="showHarm">
-      <p>
-        Every staff member at Playground is trained in harm reduction and is at your service.  This includes monitoring of kink play as outlined in our <NuxtLink to="/playbook">PLAYBOOK</NuxtLink>.  Staff can be identified by blue glowing bracelets and are there to facilitate  everyone’s good time.  
-      </p>
-      <h3>STAFF HARM REDUCTION</h3>
-      <p>
-        PLAYGROUND is a consent conscious party.  The very first chapter of our playbook goes into deep and comprehensive detail on the concept of consent at our parties.  ALL participants are required to respect this foremost of all our rules.
-      </p>
+
+    <div class="container">
+      <button @click="showHarm = !showHarm">HARM REDUCTION</button>
+      <div v-if="showHarm">
+        <p>
+          Every staff member at Playground is trained in harm reduction and is at your service.  This includes monitoring of kink play as outlined in our <NuxtLink to="/playbook">PLAYBOOK</NuxtLink>.  Staff can be identified by blue glowing bracelets and are there to facilitate  everyone’s good time.  
+        </p>
+        <h3>STAFF HARM REDUCTION</h3>
+        <p>
+          PLAYGROUND is a consent conscious party.  The very first chapter of our playbook goes into deep and comprehensive detail on the concept of consent at our parties.  ALL participants are required to respect this foremost of all our rules.
+        </p>
+      </div>
     </div>
+
   </section>
   <Footer />
 </template>
