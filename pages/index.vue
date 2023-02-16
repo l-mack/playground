@@ -20,6 +20,10 @@ import EventNotice from '~~/components/EventNotice.vue';
     background: #000000
   section
     margin: 0 100px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
     @media (max-width: 585px)
       margin: 0 50px
   header
@@ -39,6 +43,7 @@ import EventNotice from '~~/components/EventNotice.vue';
     font-family: 'Bebas Neue', cursive
     color: #EEEE
     font-size: 100px
+    text-align: center
     @media (max-width: 585px)
       font-size: 65px
   h2, h3, h4

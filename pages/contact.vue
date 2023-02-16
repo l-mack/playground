@@ -22,7 +22,7 @@
        
       <div class="text-area form-field">
         <label for="message">Let us know what you want to talk about…</label>
-       <textarea id="message" name="message" rows="10" cols="50"></textarea>
+       <textarea id="message" name="message" rows="10" cols="35"></textarea>
       </div>
        
        <button type="submit">Submit</button>
@@ -32,21 +32,35 @@
 </template>
 
 <style lang="sass" scoped>
+  p
+    text-align: center
   form
     margin: 0 75px
     @media (max-width: 585px)
       margin: 0
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
   label
     margin-right: 15px
     font-family: 'Arimo', sans-serif
     color: #EEEE
   .form-field
     margin: 25px 0
+    display: flex
+    flex-direction: column
+    align-items: flex-start
   .text-area
     display: flex
     flex-direction: column
+    align-items: flex-start
+  .text-area input[type="text"]
+    @media only screen and (max-width: 450px)
+      max-width: 100%
   text-area
     width: 50%
+
   button
     margin-top: 25px
 </style>
