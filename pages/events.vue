@@ -28,7 +28,7 @@
           </li>
             <li>
                 <p>
-                    18+ FETISH DRESS CODE IN EFFECT
+                    19+ FETISH DRESS CODE IN EFFECT
                 </p>
             </li>
         </ul>
